@@ -1,3 +1,12 @@
+Ga = 'Gabriola', coursive;
+Ro = 'Roboto', sans-serif;
+RoB = 'RobotoBlack', sans-serif;
+RoBo = 'RobotoBold', sans-serif;
+RoL = 'RobotoLight', sans-serif;
+mBl = #62D6F0
+bl = #5CCEE6
+
+
 @font-face {
 	font-family: 'Gabriola';
 	src: url('../fonts/Gabriola.eot');
@@ -35,7 +44,18 @@
 	font-weight: 900;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'RobotoBold';
+	src: url('../fonts/RobotoBold.eot');
+	src: url('../fonts/RobotoBold.eot') format('embedded-opentype'),
+		 url('../fonts/RobotoBold.woff2') format('woff2'),
+		 url('../fonts/RobotoBold.woff') format('woff'),
+		 url('../fonts/RobotoBold.ttf') format('truetype'),
+		 url('../fonts/RobotoBold.svg#RobotoBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
 @font-face {
 	font-family: 'RobotoLight';
 	src: url('../fonts/RobotoLight.eot');
@@ -58,7 +78,7 @@
 	outline none
 body
 	font-size: 18px
-	font-family: 'Roboto', sans-serif
+	font-family: Ro
 	line-height: 1.3
 a
 	color: #fefefe
@@ -108,6 +128,34 @@ footer
 		right 0
 		bottom 0
 		cursor pointer
+.general-title
+	text-align: center
+	font-family: RoB
+	font-size: 32px
+	margin-bottom: 30px
+	color: bl
+.button
+	display block
+	text-align: center
+	margin 0 auto
+	border-radius: 3px
+	color: #fff
+	background-color: mBl
+	box-shadow: 0 4px 0  2px bl
+	font-family: RoB
+	transition: all .3s ease
+	text-decoration: none
+	width 100%
+	max-width 280px
+	line-height: 45px
+	&:focus
+		text-decoration: none
+		color #fff
+	&:hover
+		text-decoration: none
+		color: #fff
+		box-shadow: 0 0 0 0 bl
+		transform: translateY(4px)
 
 @import 'main/0.header.styl'
 @import 'main/1.main.styl'
