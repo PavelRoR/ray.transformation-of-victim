@@ -1,0 +1,28 @@
+-var head_url = 'https://roleva-yurina.mastervision.su/transformation-of-victim/';
+-var head_title = '«Трансформация жертвы»';
+-var head_description = 'Запись онлайн-мастер-класса Анны Ролевой и Вероники Юриной';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+-var oferta = 'oferta/oferta.doc';
+-var fb_content = '2030481470529055';
+
+mixin gt(cl, h3)
+	h3.general-title(class= cl)= h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/main/1.main.pug
+		include pug/main/2.plan.pug
+		include pug/main/3.get.pug
+		include pug/main/4.prices.pug
+		include pug/main/5.record.pug
+		include pug/main/6.footer.pug
+		include pug/main/7.scripts.pug
+		//- include pug/scripts/callback
+		include pug/scripts/body_bottom_scripts

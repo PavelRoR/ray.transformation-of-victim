@@ -1,0 +1,21 @@
+section#record
+	.container
+		+gt('hide','Записи интенсива нет в свободном доступе')
+		p.rec_text.text_sale.hide Но Вы можете купить запись интенсива за 250р. и радоваться жизни вместе с теми, кто её уже смотрел
+		a.button.button-sale.hide(href="" target="_blank") Купить
+		+gt('','Запись занятия от 03.10.19')
+		.video-wrapper.video-wrapper_rec
+			iframe(src="https://player.vimeo.com/video/"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
+		p.rec-text Занятие состоится 03.10.19, в 19:00
+		p.rec-text Запись занятия появится здесь 04.10.19, после 13:00
+		p.rec-text Запись занятия будет в открытом доступе до 07.10.19
+		+gt('general_title_feedback','Ваши вопросы к Анне и Веронике пишите в формах ниже:')
+		.row
+			.col-md-6.col-sm-6
+				#vk
+					#vk_comments
+					script(type="text/javascript")
+						| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+			.col-md-6.col-sm-6
+				#fb
+					.fb-comments(data-href= head_url data-width="100%" data-numposts="15" data-order-by="reverse_time")
