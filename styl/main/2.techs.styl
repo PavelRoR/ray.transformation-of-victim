@@ -1,0 +1,38 @@
+#technics
+	padding 60px 0
+	background-color: #000
+	background-image url(../img/technics-bg.jpg)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	&:before
+		@extend #main:before
+	.container
+		position relative
+		z-index 9
+.technics
+	padding 20px
+	background-color: rgba(255,255,255,.95)
+	border-radius: 5px
+	margin-bottom: 50px
+.technics-list
+	li
+		position relative
+		padding-left: 15px
+		margin-bottom: 10px
+		list-style none
+		span
+			font-family: RoBo
+		&:before
+			content: ''
+			display block
+			position absolute
+			top 7px
+			left 0
+			border-radius: 10px
+			background-color: bl
+			width 9px
+			height 9px
+		&:last-child
+			margin-bottom: 0

@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     /* Таймер */
     var clock;
-    var futureDate = new Date("September 5, 2019 03:00 AM UTC+3");
+    var futureDate = new Date("April 3, 2020 00:00 AM UTC+3");
     var currentDate = new Date();
     var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
@@ -40,9 +40,10 @@ $(document).ready(function () {
     }
     if (diff < 0) {
         diff = 0;
-        // $('.button-buy').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3751&clean=true&lg=ru');
-        // $('.price-full span').css('textDecoration', 'none');
-        // $('.timer, .price-sale, .price-today').remove();
+        $('#link-1').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4721&clean=true&lg=ru');
+        $('#link-2').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4723&clean=true&lg=ru	');
+        $('.cost-full span').css('textDecoration', 'none');
+        $('.timer, .cost-sale, .cost-today, .prepayment').remove();
     }
     clock = $('.clock').FlipClock(diff, {
         clockFace: 'HourlyCounter',
@@ -50,9 +51,10 @@ $(document).ready(function () {
         language: 'ru',
         callbacks: {
             stop: function () {
-                // $('.button-buy').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3751&clean=true&lg=ru');
-                // $('.price-full span').css('textDecoration', 'none');
-                // $('.timer, .price-sale, .price-today').remove();
+                $('#link-1').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4721&clean=true&lg=ru');
+                $('#link-2').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4723&clean=true&lg=ru	');
+                $('.cost-full span').css('textDecoration', 'none');
+                $('.timer, .cost-sale, .cost-today, .prepayment').remove();
             }
         },
     });

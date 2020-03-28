@@ -1,12 +1,16 @@
 -var full_1 = '5 400р.'
 -var  full_2 = '10 900р.'
+
 -var  sale_1 = '500р.'
 -var  sale_2 = '1 000р.'
+
 -var  today_1 = '4 900р.'
 -var today_2 = '9 900р.'
--var link_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3934&clean=true&lg=ru'
--var link_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3937&clean=true&lg=ru'
--var prep = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3940&clean=true&lg=ru'
+
+-var link_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4720&clean=true&lg=ru'
+-var link_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4722&clean=true&lg=ru'
+
+-var prep = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4165&clean=true&lg=ru'
 
 section#prices
 	.container
@@ -22,6 +26,8 @@ section#prices
 						.packet-body
 							p.packet-body-text 4 занятия
 							p.more-button(data-toggle="modal" data-target="#lessons") подробнее
+							p.packet-body-text домашние задания
+							p.packet-body-text обратная связь
 						.packet-footer
 							p.cost.cost-full Стоимость:
 								span= full_1
@@ -39,7 +45,9 @@ section#prices
 						.packet-body
 							p.packet-body-text 4 занятия
 							p.more-button(data-toggle="modal" data-target="#lessons") подробнее
-							p.packet-body-text Личная консультация (1 час) от Анны Ролевой или Вероники Юриной
+							p.packet-body-text домашние задания
+							p.packet-body-text обратная связь
+							p.packet-body-text личная консультация от Анны Ролевой или вероники Юриной (1 час)
 						.packet-footer
 							p.cost.cost-full Стоимость:
 								span= full_2
@@ -48,7 +56,7 @@ section#prices
 							p.cost.cost-today Стоимость сегодня:
 								span#today-2= today_2
 							a.button.button-cost(href= link_2  target="_blank")#link-2 Выбрать
-			.prepayment
+			.prepayment.hide
 				h4.prepayment-title Акция!!!
 				p.prepayment-text Платите 500р., бонусом получаете 
 					span#prepayment-bonus 500р.

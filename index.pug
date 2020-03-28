@@ -1,11 +1,11 @@
--var head_url = 'https://roleva-yurina.mastervision.su/transformation-of-victim/';
+-var head_url = 'https://roleva-yurina.mymv.ru/transformation-of-victim/';
 -var head_title = '«Трансформация жертвы»';
 -var head_description = 'Запись онлайн-мастер-класса Анны Ролевой и Вероники Юриной';
 -var styles = 'css/styles.min.css';
 -var fav_ico = 'favicon.ico';
 -var fav_png = 'favicon.png';
--var oferta = 'oferta/oferta.doc';
--var fb_content = '2030481470529055';
+-var oferta = 'https://mastervision.su/oferta.docx';
+//- -var fb_content = '2030481470529055';
 
 mixin gt(cl, h3)
 	h3.general-title(class= cl)= h3
@@ -14,15 +14,18 @@ mixin gt(cl, h3)
 html(lang="ru")
 	head
 		include pug/head
-		include pug/scripts/head_fb_scripts
+		include pug/scripts/head_scripts
 	body
-		include pug/scripts/body_top_fb_scripts
+		include pug/scripts/body_top_scripts
 		include pug/main/1.main.pug
 		include pug/main/2.plan.pug
+		include pug/main/2.techs.pug
 		include pug/main/3.get.pug
 		include pug/main/4.prices.pug
 		include pug/main/5.record.pug
 		include pug/main/6.footer.pug
 		include pug/main/7.scripts.pug
-		//- include pug/scripts/callback
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+		script(src="//code.jivosite.com/widget.js" data-jv-id="UPm98E8VpR" async)
+		<!-- {/literal} END JIVOSITE CODE -->
 		include pug/scripts/body_bottom_scripts
